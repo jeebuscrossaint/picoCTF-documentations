@@ -1,0 +1,3 @@
+# information
+
+This next challenge I don't have high hopes for, as it is not even uppercased.... But anyways it tells us that "Files can always be changed in a secret way. Can you find the flag? 'cat.jpg'" I immediatly download cat.jpg, and automatically/accidentally open it in GIMP lol. First thing I try is to increase the brightness of the photo. Nothing of value was found really. But a cute cat tho. I then think of examining the metadata of the photo. The image had a goofy license string, one that was cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9. Due to the length of this string was probably base64 encoded, like the earlier challenge. So I just did echo echo cGljb0NURnt0aGVfbTN0YWRhdGFfMXNfbW9kaWZpZWR9 | base64 -d. That prints exactly what the answer is.
