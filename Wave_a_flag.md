@@ -1,0 +1,3 @@
+# Wave a flag
+
+We start our day with a new ctf challenge, wave a flag. We are given "can you invoke help flags for a tool or binary? __This program__ has extraordinarily helpful information...". We are given 5 hints. I am gonna try and solve it with none. So we are given 1 file named "warm" with no file extension. I immediatly figured since I daily drive linux on my laptop, I will just cd into my downloads dir and simply 'chmod +x warm'. I then did ./warm and it printed "Hello user! Pass me a -h to learn what I can do!". So I try that, and it prints a sentence which at the end of it states the flag. Big W.
