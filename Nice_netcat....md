@@ -1,0 +1,3 @@
+# Nice netcat...
+
+This next challenge tells us that there is a cool program that you speak to by using this command in a shell:$ nc mercury.picoctf.net 22902. But it doesn't speak english.... Well this shouldn't be too hard I've messed around with netcat before. Upon running the command it prints a bunch of numbers. I was absolutely stumped as what this random array of integers could be, so I checked the hints, one of them say to try another picoctf problem and another says "You can practice reading and writing ASCII....". Well these are definitely ASCII(askey) codes so I just ventured off onto some site to convert my ASCII to text. And right there, we have our flag.
